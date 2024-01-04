@@ -1,0 +1,140 @@
+*
+{
+    margin: auto;
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+   }
+   [class*="col-"] {
+    float: left;
+    padding: 15px;
+   }
+   /* For mobile phones: */
+   [class*="col-"] {
+    width: 100%;
+   }
+   @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    .col-m-13 {width: 100%}
+   }
+   @media only screen and (min-width: 360px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 15%;}
+    .col-13 {width: 100%}
+   }
+
+body
+ {
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.80857;
+    font-weight: normal;
+    overflow-x: hidden;
+    background-image: url(DarkJudge.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container {
+    background-image: url();
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+   }
+
+.input-container {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+button {
+    width: 25%;
+    padding: 10px;
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: red;
+}
+.judul {
+    color: purple;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+  }
+  .artikel {
+    color: purple;
+    text-align: center;
+    text-shadow: 2px 2px 4px gold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+  }
+  .icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #555; /* Dark-grey background */
+    overflow: auto; /* Overflow due to float */
+  }
+  
+  .icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font size */
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+  }
+  
+  .active {
+    background-color: #04AA6D; /* Add an active/current color */
+  }
